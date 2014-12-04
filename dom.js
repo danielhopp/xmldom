@@ -916,7 +916,7 @@ function serializeToString(node,buf){
 		var attrs = node.attributes;
 		var len = attrs.length;
 		var child = node.firstChild;
-		var nodeName = node.tagName;
+		var nodeName = node.localName;
 		var isHTML = htmlns === node.namespaceURI
 		buf.push('<',nodeName);
 		for(var i=0;i<len;i++){
